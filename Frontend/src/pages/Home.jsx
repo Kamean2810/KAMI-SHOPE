@@ -1,5 +1,5 @@
 import HomeOutdoor from "../components/HomePageComponents/HomeOutdoor";
-import Hotoffers from "../components/HomePageComponents/Hotoffers";
+import HotOffers from "../components/HomePageComponents/HotOffers";
 import Navbar2 from "../components/HomePageComponents/Navbar2";
 import Slider1 from "../components/HomePageComponents/Slider1";
 import ConsumerElectronics from "../components/HomePageComponents/ConsumerElectronics";
@@ -14,7 +14,7 @@ function Home() {
     <>
       <Navbar2/>
       <Slider1/>
-      <Hotoffers/>
+      <HotOffers/>
       <HomeOutdoor/>
       <ConsumerElectronics/>
       <RequestQuote/>
