@@ -1,21 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Products } from "../../data/Products"; // ✅ IMPORTANT
+import products from "../../data/product"; // ✅ FIXED
 
 const HomeOutdoor = () => {
-
   const navigate = useNavigate();
 
-  // ✅ sirf next 8 products use karo (custom selection)
-  const outdoorProducts = Products.slice(1, 9);
+  // ✅ sirf next 8 products use karo
+  const outdoorProducts = products.slice(1, 9);
 
   return (
     <div className="bg-gray-100 px-4 py-6">
-
-      {/* MAIN CONTAINER */}
       <div className="bg-white h-160 grid grid-cols-12 border rounded-lg overflow-hidden">
-
-        {/* LEFT BIG BANNER */}
         <div
           className="col-span-4 p-20 flex flex-col justify-center bg-cover bg-center"
           style={{
@@ -25,15 +20,12 @@ const HomeOutdoor = () => {
           <h2 className="text-5xl font-bold mb-6">
             Home and <br /> outdoor
           </h2>
-
           <button className="bg-white text-5xl px-2 py-6 rounded-md shadow w-80">
             Source now
           </button>
         </div>
 
-        {/* RIGHT PRODUCTS GRID */}
         <div className="col-span-8 grid grid-cols-4">
-
           {outdoorProducts.map((item) => (
             <div
               key={item.id}
@@ -46,17 +38,14 @@ const HomeOutdoor = () => {
               </div>
 
               <img
-                src={item.images[0]}  // ✅ FIXED
+                src={item.images[0]} // ✅ FIXED
                 alt={item.title}
                 className="h-40 object-contain self-end mt-4"
               />
             </div>
           ))}
-
         </div>
-
       </div>
-
     </div>
   );
 };

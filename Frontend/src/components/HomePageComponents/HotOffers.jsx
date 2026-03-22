@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Products } from "../../data/Products"; // ✅ IMPORTANT
+import products from "../../data/product"; // ✅ FIXED
 
 const HotOffers = () => {
-
   const navigate = useNavigate();
 
   const [timeLeft, setTimeLeft] = useState({
@@ -39,12 +38,11 @@ const HotOffers = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // ✅ sirf first 5 products show karo
-  const hotProducts = Products.slice(0, 5);
+  // ✅ sirf first 5 products
+  const hotProducts = products.slice(0, 5);
 
   return (
     <div className="bg-gray-100 py-4 px-6">
-
       <div className="bg-white h-125 grid grid-cols-6 border border-black">
 
         {/* LEFT TIMER */}
@@ -73,19 +71,19 @@ const HotOffers = () => {
         </div>
 
         {/* PRODUCTS */}
-        {hotProducts.map((Product) => (
+        {hotProducts.map((product) => (
           <div
-            key={product.id}
-            onClick={() => navigate(`/Product/${Product.id}`)}
+            key={product.id}   // ✅ FIXED
+            onClick={() => navigate(`/Product/${product.id}`)}
             className="text-center text-4xl p-6 border-r border-black last:border-r-0 cursor-pointer"
           >
             <img
-              src={Product.images[0]}   // ✅ FIXED
-              alt={Product.title}
+              src={product.images[0]}   // ✅ FIXED
+              alt={product.title}
               className="h-80 mx-auto object-contain mb-4"
             />
 
-            <h4 className="mb-3">{Product.title}</h4>
+            <h4 className="mb-3">{product.title}</h4>
 
             <div className="inline-block bg-red-100 text-red-600 px-4 py-1 rounded-full text-3xl font-semibold">
               -25%
