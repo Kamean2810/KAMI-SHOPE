@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { products } from "../../data/Products"; // ✅ IMPORTANT
 
-const HotOffers = () => {
+const Hotoffers = () => {
 
   const navigate = useNavigate();
 
@@ -98,4 +98,4 @@ const HotOffers = () => {
   );
 };
 
-export default HotOffers;
+export default Hotoffers;

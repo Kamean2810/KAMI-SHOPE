@@ -5,10 +5,10 @@ export const products = [
     price: "$10.30",
     description: "Cotton T-shirt",
     images: [
-      "T-shirt1.png",
-      "T-shirt2.png",
-      "T-shirt3.png",
-      "T-shirt4.png",
+      "/T-shirt1.png",
+      "/T-shirt2.png",
+      "/T-shirt3.png",
+      "/T-shirt4.png",
     ],
   },
    {
@@ -17,10 +17,10 @@ export const products = [
     price: "$10.30",
     description: "Important LapTop",
     images: [
-      "LapTop.png",
-      "LapTop.png",
-      "LapTop.png",
-      "LapTop.png",
+      "/LapTop.png",
+      "/LapTop.png",
+      "/LapTop.png",
+      "/LapTop.png",
     ],
   },
    {
@@ -29,10 +29,10 @@ export const products = [
     price: "$129.30",
     description: "Smart Phone",
     images: [
-      "Smart-Phone.png",
-      "Smart-Phone.png",
-      "Smart-Phone.png",
-      "Smart-Phone.png",
+      "/Smart-Phone.png",
+      "/Smart-Phone.png",
+      "/Smart-Phone.png",
+      "/Smart-Phone.png",
     ],
   },
    {
@@ -41,10 +41,10 @@ export const products = [
     price: "$10.30",
     description: "Imp Head Phone",
     images: [
-      "Head-Phone.png",
-      "Head-Phone.png",
-      "Head-Phone.png",
-      "Head-Phone.png",
+      "/Head-Phone.png",
+      "/Head-Phone.png",
+      "/Head-Phone.png",
+      "/Head-Phone.png",
     ],
   },
    {
@@ -53,10 +53,10 @@ export const products = [
     price: "$10.30",
     description: "Camera",
     images: [
-      "Camera.png",
-      "Camera.png",
-      "Camera.png",
-      "Camera.png",
+      "/Camera.png",
+      "/Camera.png",
+      "/Camera.png",
+      "/Camera.png",
     ],
   },
    {
@@ -65,10 +65,10 @@ export const products = [
     price: "$10.30",
     description: "Sofa-Seat",
     images: [
-      "Sofa-Seat.png",
-      "Sofa-Seat.png",
-      "Sofa-Seat.png",
-      "Sofa-Seat.png",
+      "/Sofa-Seat.png",
+      "/Sofa-Seat.png",
+      "/Sofa-Seat.png",
+      "/Sofa-Seat.png",
     ],
   },
    {
@@ -77,10 +77,10 @@ export const products = [
     price: "$10.30",
     description: "Hand_carry-Bag",
     images: [
-      "Hand_carry-Bag.png",
-      "Hand_carry-Bag.png",
-      "Hand_carry-Bag.png",
-      "Hand_carry-Bag.png",
+      "/Hand_carry-Bag.png",
+      "/Hand_carry-Bag.png",
+      "/Hand_carry-Bag.png",
+      "/Hand_carry-Bag.png",
     ],
   },
    {
@@ -89,10 +89,10 @@ export const products = [
     price: "$10.30",
     description: "Men-Coat",
     images: [
-      "Men-Coat.png",
-      "Men-Coat.png",
-      "Men-Coat.png",
-      "Men-Coat.png",
+      "/Men-Coat.png",
+      "/Men-Coat.png",
+      "/Men-Coat.png",
+      "/Men-Coat.png",
     ],
   },
    {
@@ -101,10 +101,10 @@ export const products = [
     price: "$10.30",
     description: "Half-Jeans",
     images: [
-      "Half-Jeans.png",
-      "Half-Jeans.png",
-      "Half-Jeans.png",
-      "Half-Jeans.png",
+      "/Half-Jeans.png",
+      "/Half-Jeans.png",
+      "/Half-Jeans.png",
+      "/Half-Jeans.png",
     ],
   },
 ];
