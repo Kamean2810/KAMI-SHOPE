@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { products } from "../../data/Products"; // ✅ IMPORTANT
+import { Products } from "../../data/Products"; // ✅ IMPORTANT
 
 const HomeOutdoor = () => {
 
   const navigate = useNavigate();
 
   // ✅ sirf next 8 products use karo (custom selection)
-  const outdoorProducts = products.slice(1, 9);
+  const outdoorProducts = Products.slice(1, 9);
 
   return (
     <div className="bg-gray-100 px-4 py-6">
@@ -37,7 +37,7 @@ const HomeOutdoor = () => {
           {outdoorProducts.map((item) => (
             <div
               key={item.id}
-              onClick={() => navigate(`/product/${item.id}`)}
+              onClick={() => navigate(`/Product/${item.id}`)}
               className="border p-6 flex flex-col justify-between cursor-pointer"
             >
               <div>

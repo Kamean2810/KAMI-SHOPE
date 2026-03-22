@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { products } from "../../data/Products"; // ✅ IMPORTANT
+import { Products } from "../../data/Products"; // ✅ IMPORTANT
 
 const HotOffers = () => {
 
@@ -40,7 +40,7 @@ const HotOffers = () => {
   }, []);
 
   // ✅ sirf first 5 products show karo
-  const hotProducts = products.slice(0, 5);
+  const hotProducts = Products.slice(0, 5);
 
   return (
     <div className="bg-gray-100 py-4 px-6">
@@ -73,19 +73,19 @@ const HotOffers = () => {
         </div>
 
         {/* PRODUCTS */}
-        {hotProducts.map((product) => (
+        {hotProducts.map((Product) => (
           <div
             key={product.id}
-            onClick={() => navigate(`/product/${product.id}`)}
+            onClick={() => navigate(`/Product/${Product.id}`)}
             className="text-center text-4xl p-6 border-r border-black last:border-r-0 cursor-pointer"
           >
             <img
-              src={product.images[0]}   // ✅ FIXED
-              alt={product.title}
+              src={Product.images[0]}   // ✅ FIXED
+              alt={Product.title}
               className="h-80 mx-auto object-contain mb-4"
             />
 
-            <h4 className="mb-3">{product.title}</h4>
+            <h4 className="mb-3">{Product.title}</h4>
 
             <div className="inline-block bg-red-100 text-red-600 px-4 py-1 rounded-full text-3xl font-semibold">
               -25%

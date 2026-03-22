@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { products } from "../../data/products"; // ✅ IMPORTANT
+import { Products } from "../../data/Products"; // ✅ IMPORTANT
 
 const ConsumerElectronics = () => {
 
   const navigate = useNavigate();
 
   // ✅ yahan tum apni marzi se products select kar sakte ho
-  const electronicsProducts = products.slice(0, 8);
+  const electronicsProducts = Products.slice(0, 8);
 
   return (
     <div className="bg-gray-100 px-4 py-6">
@@ -39,7 +39,7 @@ const ConsumerElectronics = () => {
           {electronicsProducts.map((item) => (
             <div
               key={item.id}
-              onClick={() => navigate(`/product/${item.id}`)}
+              onClick={() => navigate(`/Product/${item.id}`)}
               className="border p-6 flex justify-between cursor-pointer"
             >
 

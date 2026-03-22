@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { products } from "../../data/Products";
+import { Products } from "../../data/Products";
 
 const RecommendedItems = () => {
 
@@ -17,25 +17,25 @@ const RecommendedItems = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
 
-          {products.map((product) => (
+          {Products.map((Product) => (
             <div
               key={product.id}
-              onClick={() => navigate(`/product/${product.id}`)}
+              onClick={() => navigate(`/Product/${Product.id}`)}
               className="bg-white h-150 rounded-xl p-4 shadow-sm hover:shadow-lg transition cursor-pointer"
             >
 
               <img
-                src={product.images[0]}   // ✅ first image
-                alt={product.title}
+                src={Product.images[0]}   // ✅ first image
+                alt={Product.title}
                 className="w-full h-110 object-contain mb-4"
               />
 
               <h3 className="font-semibold text-4xl">
-                {product.price}
+                {Product.price}
               </h3>
 
               <p className="text-gray-500 text-3xl">
-                {product.title}
+                {Product.title}
               </p>
 
             </div>
