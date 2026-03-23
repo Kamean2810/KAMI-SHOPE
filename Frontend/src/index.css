@@ -1,9 +1,28 @@
-@import "tailwindcss";
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body{
-  font-family: "Michroma", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+/* Base reset (important for cross-browser consistency) */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
 }
 
-.container{width:90%;margin: auto;}
+/* Custom utilities (SAFE) */
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
