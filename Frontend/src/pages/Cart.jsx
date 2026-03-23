@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../components/HomePageComponents/Navbar";
 import CartItem from "../components/CartPageComponents/CartItem";
 import CartSummary from "../components/CartPageComponents/CartSummary";
 import Features from "../components/CartPageComponents/Features";
 import SavedItems from "../components/CartPageComponents/SavedItems";
 import DiscountBanner from "../components/CartPageComponents/DiscountBanner";
-import Footer from "../components/HomePageComponents/Footer";
 
 const Cart = () => {
   // Dynamic cart items
@@ -35,7 +33,6 @@ const Cart = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Navbar />
 
       <div className="max-w-650 mx-auto p-6">
 
@@ -80,7 +77,6 @@ const Cart = () => {
 
       </div>
 
-      <Footer />
     </div>
   );
 };

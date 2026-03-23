@@ -26,7 +26,7 @@ const Navbar2 = () => {
     <div className="flex justify-between items-center px-18 py-8 bg-gray-50 border-t shadow-md text-4xl">
       
       {/* ===== LEFT SIDE ===== */}
-      <div className="flex items-center gap-18 font-medium">
+      <div className="flex items-center gap-20 font-medium">
         
         {/* Hamburger + All Categories */}
         <div className="flex items-center gap-3 cursor-pointer hover:text-red-500 transition">

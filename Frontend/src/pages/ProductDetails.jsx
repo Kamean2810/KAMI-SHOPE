@@ -43,7 +43,7 @@ const ProductDetails = () => {
             <img
               src={selectedImage}
               alt={product.title}
-              className="w-full h-125 object-contain border rounded"
+              className="w-full h-[600px] object-contain border rounded"
             />
             <div className="flex gap-2 mt-3">
               {images.map((img, i) => (
@@ -52,7 +52,7 @@ const ProductDetails = () => {
                   src={img}
                   alt=""
                   onClick={() => setSelectedImage(img)}
-                  className={`w-30 h-30 border rounded cursor-pointer ${
+                  className={`w-30 h-[150px] border rounded cursor-pointer ${
                     selectedImage === img ? "border-blue-500" : ""
                   }`}
                 />
@@ -161,7 +161,7 @@ const ProductDetails = () => {
                 <img
                   src={item.images[0].startsWith("/") ? item.images[0] : `/${item.images[0]}`}
                   alt={item.title}
-                  className="h-70 mx-auto object-contain"
+                  className="h-[300px] mx-auto object-contain"
                 />
                 <p className="text-3xl mt-2">{item.title}</p>
                 <p className="text-gray-500 text-3xl">{item.price}</p>
